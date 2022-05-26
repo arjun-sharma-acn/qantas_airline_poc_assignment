@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">qantas_airline_poc_assignment</string>
+    <string name="get_airport_list_text">Get Airport list</string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailsActivity">
+
+    <TextView
+        android:id="@+id/tv_airport_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="airport code"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_airport_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_airport_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="airport name"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_airport_code" />
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="city"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_country_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_airport_name" />
+
+    <TextView
+        android:id="@+id/tv_country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="country name"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_region_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_city" />
+
+
+    <TextView
+        android:id="@+id/tv_region_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="region name"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_timezone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_country_name" />
+
+
+    <TextView
+        android:id="@+id/tv_timezone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time zone"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_region_name" />
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_timezone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
