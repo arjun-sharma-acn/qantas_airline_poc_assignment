@@ -2,7 +2,6 @@ package com.example.qantas_airline_poc_assignment.ui
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -51,7 +50,7 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
                 Toast.makeText(this@MainActivity, "Error in getting list", Toast.LENGTH_LONG).show()
             }
         }
-        viewModel.makeAPICall()
+        viewModel.makeRepoCall()
     }
 
 
