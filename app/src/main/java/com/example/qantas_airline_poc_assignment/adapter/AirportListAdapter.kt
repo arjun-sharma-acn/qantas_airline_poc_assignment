@@ -1,5 +1,6 @@
 package com.example.qantas_airline_poc_assignment.adapter
 
+import android.graphics.Color
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -33,6 +34,11 @@ class AirportListAdapter(private val mListener: ItemClickListener) :RecyclerView
 
         holder.itemView.setOnClickListener {
             mListener.onItemClickListener(position, airportList?.get(position)!!)
+        }
+        if (position % 2 == 0) {
+            holder.itemView.setBackgroundColor(Color.parseColor("#FF03DAC5"))
+        } else {
+            holder.itemView.setBackgroundColor(Color.parseColor("#FF018786"))
         }
     }
 

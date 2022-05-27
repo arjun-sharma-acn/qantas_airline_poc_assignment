@@ -2,10 +2,12 @@ package com.example.qantas_airline_poc_assignment.ui
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.qantas_airline_poc_assignment.R
@@ -25,6 +27,7 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
         setContentView(R.layout.activity_main)
 
         supportActionBar?.title = "Airport List";
+        supportActionBar?.setBackgroundDrawable(ColorDrawable(ContextCompat.getColor(this, R.color.teal_200)))
 
         progress.visibility = View.VISIBLE
         initRecyclerView()

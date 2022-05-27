@@ -2,8 +2,10 @@ package com.example.qantas_airline_poc_assignment.ui
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.content.ContextCompat
 import com.example.qantas_airline_poc_assignment.R
 import com.example.qantas_airline_poc_assignment.models.AirportDataClassItem
 import kotlinx.android.synthetic.main.activity_details.*
@@ -17,6 +19,7 @@ class DetailsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_details)
         supportActionBar?.title = "Airport Details";
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setBackgroundDrawable(ColorDrawable(ContextCompat.getColor(this, R.color.teal_700)))
         val bundle = intent.extras
         val airportDetails = bundle?.get("airport_details") as AirportDataClassItem
         tv_airport_code.text = "Airport Code :: ${airportDetails.airportCode}".ifEmpty { "" }
